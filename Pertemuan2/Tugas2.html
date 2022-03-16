@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pemrograman WEB-Pertemuan 2</title>
         <style>
+            h1{
+                text-align: center;
+            }
             img{
                 /* resize */
                 width: 30%;
@@ -9,21 +15,75 @@
                 /* Transparant */
                 opacity: 100%;
                 /* Border */
-                border: 5px solid #ddd;
+                border: 5px solid rgb(107, 107, 107);
                 /* border-radius: 4px; */
                 /* padding: 5px; */
                 /* width: 150px; */
             }
-            img:hover{
+            /* img:hover{
                 transform: scaleX(-1);
                 filter: opacity(80%);
+            } */
+
+            .image2:hover{
+                opacity: 20%;
             }
+            
+
         </style>
     </head>
 
     <body>
-        <img src="https://static.dw.com/image/55000481_303.jpg" alt="Taj Mahal"><br>
-        <img src="https://cdn-2.tstatic.net/belitung/foto/bank/images/tahun-kabisat_20160229_115055.jpg" alt="Piramida"><br>
-        <img src="https://portaldesa.co/wp-content/uploads/2021/09/Sekilas-Tentang-7-Keajaiban-Dunia-Candi-Borobudur.jpg" alt="Candi Borobudur"><br>
+        <h1>GAMBAR INSPIRASI HIDUP</h1>
+
+        <div id="img1">
+            <div>
+                <label>Gambar Original</label>
+            </div>
+            <div class="image1">
+                <img src="https://static.dw.com/image/55000481_303.jpg" alt="Gambar Original">
+            </div>
+        </div>
+        <br>
+
+        <div id="img2">
+            <div>
+                <label>Gambar Transparant</label>
+            </div>
+            <div class="image2">
+                <img src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2020/06/243a15245f71fc38fc787d9c517868a3.jpg" alt="Gambar Transparant">
+            </div>
+        </div>
+        <br>
+
+        <div id="img3">
+            <div>
+                <label>Gambar Flip</label>
+            </div>
+            <div class="image3">
+                <img src="" alt="Gambar Flip">
+            </div>
+        </div>
+        <br>
+
+        <div id="img4">
+            <div>
+                <label>Gambar dengan Filter Blur</label>
+            </div>
+            <div class="image4">
+                <img src="" alt="Gambar dengan Filter Blur">
+            </div>
+        </div>
+        <br>
+
+        <div id="img5">
+            <div>
+                <label>Gambar dengan Filter Invert</label>
+            </div>
+            <div class="image5">
+                <img src="" alt="Gambar dengan Filter Invert">
+            </div>
+        </div>
+        <br>
     </body>
 </html>
