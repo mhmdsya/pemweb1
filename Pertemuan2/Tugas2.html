@@ -1,89 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pemrograman WEB-Pertemuan 2</title>
+
         <style>
             h1{
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
             }
             img{
-                /* resize */
-                width: 30%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 500px;
                 height: auto;
-                /* Transparant */
-                opacity: 100%;
-                /* Border */
-                border: 5px solid rgb(107, 107, 107);
-                /* border-radius: 4px; */
-                /* padding: 5px; */
-                /* width: 150px; */
+                border: 5px solid rgb(122, 122, 122);
             }
-            /* img:hover{
-                transform: scaleX(-1);
-                filter: opacity(80%);
-            } */
-
-            .image2:hover{
-                opacity: 20%;
+            .overlay{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
             }
-            
-
+            .img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+            .img1:hover{
+                opacity: 50%;
+            }
+            .img2:hover{
+                transform:scale(-1);
+            }
+            .img3:hover{
+                filter: invert();
+            }
+            .img4:hover{
+                transform:scaleX(-1);
+                filter: grayscale();                
+            }
+            .img5:hover{
+                transform:scaleX(-1);
+                filter:opacity(20%);  
+            }
         </style>
     </head>
-
     <body>
-        <h1>GAMBAR INSPIRASI HIDUP</h1>
-
-        <div id="img1">
-            <div>
-                <label>Gambar Original</label>
+        <div class="container">
+            <div class="header">
+                <h1>GAMBAR PENGINSPIRASI SAYA</h1>
             </div>
-            <div class="image1">
-                <img src="https://static.dw.com/image/55000481_303.jpg" alt="Gambar Original">
+
+            <div class="content">
+                <div class="img">
+                    <img src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2020/06/243a15245f71fc38fc787d9c517868a3.jpg" alt="gambar 1" class="img1">
+                    <div class="overlay">
+                        <p class="text">Bersepeda</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/05/03/3088772730.jpg" alt="gambar 2" class="img2">
+                    <div class="overlay">
+                        <p class="text">Pemrograman</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="https://phintraco.com/wp-content/uploads/2017/05/networksecurity-2.jpg" alt="gambar 3" class="img3">
+                    <div class="overlay">
+                        <p class="text">Jaringan</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="https://www.goodnewsfromindonesia.id/uploads/post/large-gunung-kerinci-a05e1da851e221b71264ba26b705bafd.jpg" alt="gambar 4" class="img4">
+                    <div class="overlay">
+                        <p class="text">Gunung</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="https://cdn1.katadata.co.id/media/images/thumb/2021/07/06/Wisata_Super_Prioritas_Labuan_Bajo_di_Masa_Pandemi-2021_07_06-14_49_19_e8475d3b3909ef45d8023affc6372aec_620x413_thumb.jpg" alt="gambar 5" class="img5">
+                    <div class="overlay">
+                        <p class="text">Pantai</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-
-        <div id="img2">
-            <div>
-                <label>Gambar Transparant</label>
-            </div>
-            <div class="image2">
-                <img src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2020/06/243a15245f71fc38fc787d9c517868a3.jpg" alt="Gambar Transparant">
-            </div>
-        </div>
-        <br>
-
-        <div id="img3">
-            <div>
-                <label>Gambar Flip</label>
-            </div>
-            <div class="image3">
-                <img src="" alt="Gambar Flip">
-            </div>
-        </div>
-        <br>
-
-        <div id="img4">
-            <div>
-                <label>Gambar dengan Filter Blur</label>
-            </div>
-            <div class="image4">
-                <img src="" alt="Gambar dengan Filter Blur">
-            </div>
-        </div>
-        <br>
-
-        <div id="img5">
-            <div>
-                <label>Gambar dengan Filter Invert</label>
-            </div>
-            <div class="image5">
-                <img src="" alt="Gambar dengan Filter Invert">
-            </div>
-        </div>
-        <br>
     </body>
 </html>
