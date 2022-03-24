@@ -1,0 +1,39 @@
+.mainmenu {
+    position: relative;
+    display: inline-block;
+    background-color: skyblue;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    color: blue;
+}
+.mainmenu:hover {
+    background-color: blue;
+    color: white;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 400px;
+}
+.menu a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+}
+.menu a:hover{
+    background-color: blue;
+    color: white;
+}
+.nav:hover .menu {
+    display: block;
+}
