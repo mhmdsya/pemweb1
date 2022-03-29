@@ -1,0 +1,87 @@
+.wrap{
+    background: blue;
+    width: 100%;
+    margin: 10px auto;   
+}
+    
+/*bagian header*/
+.wrap .header{
+    background: green;
+    /*height: 50px;*/
+    padding: 2px 10px;
+}
+/*akhir header*/
+    
+/*bagian menu*/
+.wrap .menu{
+    background: yellow;
+    overflow: hidden;
+ }
+
+ .wrap .menu ul{
+    padding: 0;
+    margin: 0;
+    background: yellow;
+}
+    
+.wrap .menu ul li{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+/*akhir menu*/
+.clear{
+    clear: both;
+}
+
+.badan{
+    height: 450px;
+}
+
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+    background: orange;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+/*akhir sidebar*/
+
+.wrap .badan .content{
+    background: red;
+    float: left;
+    height: 100%;
+    width: 75%;
+}
+
+.wrap .footer{
+    width: 100%;
+    padding: 10px;
+}
+
+.form{
+    padding: 10px;
+    background: green;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.title{
+    font-size:26px;
+    font-weight:bold;
+    color:#666;
+    padding:5px 0;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+}
+    
+.fitem{
+    margin-bottom:5px;
+}
+    
+.fitem label{
+    display:inline-block;
+    width:120px;
+}
+    
