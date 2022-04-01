@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <link rel="style sheet" type="text/css" href="style.css"> </head>
-    
     <body>
     <?php
         echo "<h1>";
