@@ -4,9 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="script.js" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Pemrograman WEB-Pertemuan 5</title>
+
+    <style>
+      * {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      form {
+        align-items: center;
+        background-color: aqua;
+        padding: 20px;
+      }
+
+      footer {
+        text-align: center;
+      }
+    </style>
+    
   </head>
   <body>
     <div class="container">
@@ -15,16 +41,19 @@
           <header>
             <h2>CALCULATOR</h2>
           </header>
+          
           <tr>
             <td>Angka 1</td>
             <td>:</td>
             <td><input type="number" name="angka1" id="angka1" /></td>
           </tr>
+
           <tr>
             <td>Angka 2</td>
             <td>:</td>
             <td><input type="number" name="angka2" id="angka2" /></td>
           </tr>
+
           <tr>
             <td colspan="3" align="right">
               <input class="tombol" type="button" onclick="tambah()" value="  +  " />
@@ -33,11 +62,13 @@
               <input class="tombol" type="button" onclick="bagi()" value="  /  " />
             </td>
           </tr>
+
           <tr>
             <td>Angka 3</td>
             <td>:</td>
             <td><input type="number" name="angka3" id="angka3" /></td>
           </tr>
+
           <tr>
             <td colspan="3" align="right">
               <input class="tombol" type="button" onclick="tambah2()" value="  +  " />
@@ -46,14 +77,19 @@
               <input class="tombol" type="button" onclick="bagi2()" value="  /  " />
             </td>
           </tr>
+
           <tr>
             <td>Hasil</td>
             <td>:</td>
             <td><input type="number" name="hasil" id="hasil" /></td>
           </tr>
+
         </table>
       </form>
     </div>
+
+    <footer>Mahmud Syaiful Aminudin</footer>
+
     <script type="text/javascript">
       function tambah() {
         let angka1 = document.getElementById("angka1").value;
@@ -61,42 +97,49 @@
         let hasil = parseInt(angka1) + parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function kurang() {
         let angka1 = document.getElementById("angka1").value;
         let angka2 = document.getElementById("angka2").value;
         let hasil = parseInt(angka1) - parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function kali() {
         let angka1 = document.getElementById("angka1").value;
         let angka2 = document.getElementById("angka2").value;
         let hasil = parseInt(angka1) * parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function bagi() {
         let angka1 = document.getElementById("angka1").value;
         let angka2 = document.getElementById("angka2").value;
         let hasil = parseInt(angka1) / parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function tambah2() {
         let angka1 = document.getElementById("hasil").value;
         let angka2 = document.getElementById("angka3").value;
         let hasil = parseInt(angka1) + parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function kurang2() {
         let angka1 = document.getElementById("hasil").value;
         let angka2 = document.getElementById("angka3").value;
         let hasil = parseInt(angka1) - parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function kali2() {
         let angka1 = document.getElementById("hasil").value;
         let angka2 = document.getElementById("angka3").value;
         let hasil = parseInt(angka1) * parseInt(angka2);
         document.getElementById("hasil").value = hasil;
       }
+
       function bagi2() {
         let angka1 = document.getElementById("hasil").value;
         let angka2 = document.getElementById("angka3").value;
