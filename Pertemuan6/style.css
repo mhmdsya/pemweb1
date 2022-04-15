@@ -1,0 +1,21 @@
+body {
+    background-color: darkgreen;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    background: transparent;
+}
+
+.button {
+    width: 50;
+    height: 50;
+    font-size: 30;
+    margin: 2;
+    border: none;
+    cursor: pointer;
+    background: greenyellow;
+}
