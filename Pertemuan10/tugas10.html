@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman WEB-Pertemuan 10</title>
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tugas Pertemuan 10</h1>
+  </header>
+  <script lang="JavaScript">
+    function perolehWarna () {
+      (this.warna);
+    }
+
+    function ubahTipe (tipe) {
+      this.tipe = tipe;
+    }
+    function ubahMerk (merk) {
+      this.merk = merk;
+    }
+    function ubahCc (cc) {
+      this.cc = cc;
+    }
+    function ubahWarna (warna) {
+      this.warna = warna;
+    }
+
+    function tampilkanInfoMobil() {
+      document.write("Tipe : " + this.tipe + "<BR>");
+      document.write("Merk : " + this.merk + "<BR>");
+      document.write("cc	: " + this.cc + "<BR>");
+      document.write("Warna : " + this.warna + "<BR>");
+    }
+
+    function Mobil(tipe, merk, cc, warna) {
+      //	Properti 
+      this.tipe = tipe; this.merk = merk; this.cc = cc; this.warna = warna;
+      //	Metode
+      this.perolehWarna = perolehWarna;
+      this.ubahTipe = ubahTipe;
+      this.ubahMerk = ubahMerk;
+      this.ubahCc = ubahCc;
+      this.ubahWarna = ubahWarna;
+      this.tampilkanInfoMobil = tampilkanInfoMobil;
+    }
+
+    // Membuat objek berdasarkan Mobil
+    document.write("<HR>");
+    var mobilku = new Mobil("Sidekick", "Suzuki", 1600, "Merah");
+    mobilku.tampilkanInfoMobil();
+    document.write("<HR>");
+    
+    mobilku.ubahTipe("Terios");
+    mobilku.ubahMerk("Daihatsu");
+    mobilku.ubahCc(1500);
+    mobilku.ubahWarna("Merah Metalik");
+    mobilku.tampilkanInfoMobil();
+    document.write("<HR>");
+  </script>
+</body>
+</html>
