@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemrograman WEB-Pertemuan 11</title>
+  <style>
+    * {
+      font-family: 'Roboto Mono', monospace;
+    }
+    body {
+      background-color: #541690;
+    }
+    .container {
+      padding: 200px;
+    }
+    h1, h3 {
+      text-align: center;
+      color: white;
+    }
+    .date {
+      margin: auto;
+      display: block;
+      text-align: center;
+      width: 15%;
+      height: 8%;
+    }
+    .submit {
+      margin: auto;
+      margin-top: 5px;
+      display: block;
+      text-align: center;
+      width: 7%;
+      height: 8%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Menghitung Usia Anda</h1>
+      <h3>Masukkan Tanggal Lahir Anda</h3>
+    </header>
+
+    <form action="hasil.php" method="post">
+      <input class="date" type="date" name="tanggal_lahir">
+      <input class="submit" type="submit" value="SUBMIT">
+    </form>
+  </div>
+</body>
+</html>
