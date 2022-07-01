@@ -1,0 +1,34 @@
+Database: genap
+
+CREATE TABLE genap_mahasiswa (
+  nim varchar(6) NOT NULL DEFAULT '',
+  nama varchar(25) NOT NULL DEFAULT '',
+  tanggal_lahir date,
+  kode_fakultas char(2) NOT NULL DEFAULT '',
+  kode_jurusan char(2) NOT NULL,
+  PRIMARY KEY (nim)
+)
+
+CREATE TABLE genap_fakultas (
+  kode_fakultas char(2) NOT NULL,
+  nama_fakultas varchar(50) NOT NULL,
+  PRIMARY KEY (kode_fakultas) USING BTREE
+)
+
+CREATE TABLE genap_jurusan (
+  kode_jurusan int(2) NOT NULL,
+  kode_fakultas int(2) DEFAULT NULL,
+  nama_jurusan varchar(30) DEFAULT NULL,
+  PRIMARY KEY (kode_jurusan)
+)
+
+INSERT INTO genap_fakultas (kode_fakultas, nama_fakultas) VALUES
+('01', 'Teknik'),
+('02', 'Ekonomi');
+
+INSERT INTO genap_jurusan (kode_jurusan, kode_fakultas, nama_jurusan) VALUES
+(1, 01, 'Teknik Informatika'),
+(2, 02, 'Akuntansi'),
+(3, 01, 'Sistem Informasi'),
+(4, 02, 'Manajemen');
+
