@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pemrograman WEB-Pertemuan 13</title>
+
   <style>
     * {
       font-family: 'Roboto Mono', monospace;
     }
 
     body {
-      background: #205375;
+      background: #112B3C;
     }
 
     .container {
@@ -21,17 +22,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      background: #112B3C;
-      border-radius: 24px;
       text-align: center;
     }
 
     h2 {
-      color: white;
+      color: #B7B9F4;
     }
     
     .input input[type = "number"] {
-      border: 0;
       background: #2E0249;
       border: 3px solid #F806CC;
       display: block;
@@ -51,7 +49,6 @@
     }
     
     .input input[type = "submit"] {
-      border: 0;
       background: #A91079;
       border: 5px solid #15133C;
       display: block;
@@ -67,11 +64,10 @@
 
     .input input[type = "submit"]:active {
       background: #15133C;
-
+      width: 200px;
     }
     
     .hasil {
-      border: 0;
       background: #2E0249;
       border: 3px solid #F806CC;
       display: block;
@@ -107,7 +103,7 @@
           }
         }
         else {
-          echo "Harap diisi sisi kubusnya!!!";
+          echo "Harap diisi sisi kubusnya !!!";
         };
         exit();
       ?>
